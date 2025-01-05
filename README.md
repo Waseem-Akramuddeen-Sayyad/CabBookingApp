@@ -32,30 +32,5 @@ In the project directory, you can run:
 - Cleans and builds the application.
 - Packages the application as a deployable `.jar` file located in the `target` directory.
 
-## Learn More
-
-### Documentation and Resources
-
-- [Spring Boot Documentation](https://spring.io/projects/spring-boot)
-- [MongoDB Documentation](https://www.mongodb.com/docs/)
-- [Docker Documentation](https://docs.docker.com/)
-- [Postman API Testing Guide](https://learning.postman.com/docs/getting-started/introduction/)
-
-### Troubleshooting
-
-#### Common Issues:
-
-1. **Application Fails to Start:**
-   - Verify MongoDB is running and accessible.
-   - Check the `application.properties` file for correct database configurations.
-
-2. **Docker Build Issues:**
-   - Ensure Docker is installed and running.
-   - Verify the `Dockerfile` syntax and build context.
-
-3. **Test Failures:**
-   - Review test logs for specific errors.
-   - Confirm all dependencies are up-to-date.
-
 Feel free to refer to the above resources or open an issue in the repository for further assistance.
 
