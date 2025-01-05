@@ -1,46 +1,61 @@
 # CabBookingApp
+
 An interactive and secure cab booking application designed using Java and Spring Boot. This project demonstrates robust implementation of core features such as user authentication, role-based access control, and RESTful API communication, ensuring scalability, security, and user-friendliness.
 
-Features
+## Available Scripts
 
-User Management:
+In the project directory, you can run:
 
-User registration and login.
+### `./mvnw spring-boot:run`
 
-Profile management.
+- Runs the application in development mode.
+- Access the application at `http://localhost:8080`.
+- The console will log the server status and any application errors or warnings.
 
-Role-based access control (e.g., Admin, Rider, Driver).
+### `./mvnw test`
 
-Authentication and Authorization:
+- Launches the test suite for the application.
+- Displays detailed test results in the console.
 
-JWT-based authentication for secure session management.
+### `docker build -t cabbookingapp .`
 
-Secure user data handling.
+- Builds a Docker image for the application.
+- Ensures portability and consistency across different environments.
 
-API Development:
+### `docker run -p 8080:8080 cabbookingapp`
 
-RESTful APIs for frontend-backend communication.
+- Runs the application in a Docker container.
+- Maps the container's port 8080 to the host machine's port 8080.
 
-API validation using Postman for resilience and proper error handling.
+### `mvn clean install`
 
-Database Management:
+- Cleans and builds the application.
+- Packages the application as a deployable `.jar` file located in the `target` directory.
 
-Designed an efficient MongoDB schema.
+## Learn More
 
-Leveraged Hibernate and JPA for seamless data operations.
+### Documentation and Resources
 
-Deployment:
+- [Spring Boot Documentation](https://spring.io/projects/spring-boot)
+- [MongoDB Documentation](https://www.mongodb.com/docs/)
+- [Docker Documentation](https://docs.docker.com/)
+- [Postman API Testing Guide](https://learning.postman.com/docs/getting-started/introduction/)
 
-Deployed using Docker containers for scalability and portability.
+### Troubleshooting
 
-Technologies Used
+#### Common Issues:
 
-Backend: Java, Spring Boot, Spring Security, Hibernate, JPA
+1. **Application Fails to Start:**
+   - Verify MongoDB is running and accessible.
+   - Check the `application.properties` file for correct database configurations.
 
-Database: MongoDB
+2. **Docker Build Issues:**
+   - Ensure Docker is installed and running.
+   - Verify the `Dockerfile` syntax and build context.
 
-Authentication: JWT (JSON Web Tokens)
+3. **Test Failures:**
+   - Review test logs for specific errors.
+   - Confirm all dependencies are up-to-date.
 
-Containerization: Docker
+Feel free to refer to the above resources or open an issue in the repository for further assistance.
 
-Tools: Postman for API testing
